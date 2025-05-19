@@ -7,8 +7,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotBlank;
 
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 
-public class LibroDTO {
+public class LibroDTO implements Serializable {
     @NotBlank( message = "El email no puede estar vacío")
     @NotNull
     private Long idLibro;

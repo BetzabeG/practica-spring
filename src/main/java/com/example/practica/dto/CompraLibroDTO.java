@@ -8,9 +8,10 @@ import jakarta.validation.constraints.NotBlank;
 
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class CompraLibroDTO {
+public class CompraLibroDTO implements Serializable {
     @NotNull
     @NotBlank(message = "El nombre no puede estar vacío")
 
